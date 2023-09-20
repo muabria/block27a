@@ -2,7 +2,7 @@ import { useState } from "react";
 
 
 
-export default function Dashboard() {
+export default function primaryDashboard() {
     const [successMessage, setSuccessMessage] = useState(null);
 
     async function handleClick() {
@@ -19,7 +19,7 @@ export default function Dashboard() {
         <div>
             <h1>Transactions</h1>
             <h4>Transactions!</h4>
-            <button onClick={handleClick}>Click!</button>
+            <button onClick={handleClick}>Click Me!</button>
             {successMessage && <p>{successMessage}</p>}
         </div>
     )
